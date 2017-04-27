@@ -50,8 +50,21 @@ class myThirdViewController: UITableViewController, ListingDelegate {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell : CustomCell = tableView.dequeueReusableCell(withIdentifier: "CustomCell", for: indexPath) as! CustomCell
-        cell.labelTitle.text = names[indexPath.row]
+        
+        var cell = tableView.dequeueReusableCell(withIdentifier: "CustomCell", for: indexPath)
+        
+        
+        if cell == nil {
+            cell = UITableViewCell.init(style: UITableViewCellStyle.default, reuseIdentifier: "CustomCell")
+        }
+        cell.textLabel?.text = names[indexPath.row]
+        cell.accessoryType = .checkmark
+        
+        cell.imageView?.image = UIImage.init(named: names[indexPath.row])
+        
         return cell
+
+        
+       
     }
 }

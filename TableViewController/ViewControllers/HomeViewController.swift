@@ -35,8 +35,7 @@ class HomeViewController: UIViewController {
         {            
             controller.reloadMyData(withArray: ["aamir","ajay","amitabh","anil","hrithik","salman","shahrukh","varun"])
             
-            //controller.printMyName()
-            
+                        
         }
 
         // Pass the selected object to the new view controller.
