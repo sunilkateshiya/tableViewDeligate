@@ -11,8 +11,15 @@ import UIKit
 class HomeViewController: UIViewController {
     @IBOutlet weak var textField: UITextField!
 
+    @IBOutlet weak var pView: UIProgressView!
+    
+    var value : Float = 0.0
+    var timer: Timer!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        timer = Timer.scheduledTimer(timeInterval: 0.01, target: self, selector: #selector(update), userInfo: nil, repeats: true)
 
         
     }
@@ -37,8 +44,23 @@ class HomeViewController: UIViewController {
             
                         
         }
+        
+        
+        
 
         // Pass the selected object to the new view controller.
+    }
+    func update() {
+        
+        value = value + 0.01
+        pView.setProgress(value, animated: true)
+        if value >= 1 {
+            timer.invalidate()
+            timer = nil
+            pView.isHidden = true
+        }
+        
+    
     }
  
 

@@ -158,6 +158,10 @@
                                     <action selector="submitPressed:" destination="d8U-9h-y8a" eventType="touchUpInside" id="4UA-1e-LRF"/>
                                 </connections>
                             </button>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MDx-DV-7Vb">
+                                <rect key="frame" x="112" y="90" width="150" height="2"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </progressView>
                         </subviews>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -170,6 +174,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="ad1-M4-prj"/>
                     <connections>
+                        <outlet property="pView" destination="MDx-DV-7Vb" id="5vK-4W-XO1"/>
                         <outlet property="textField" destination="kWl-xa-7Zi" id="p1R-YS-pRy"/>
                         <segue destination="FpV-Nn-9Wx" kind="show" identifier="SegueListView" id="BFH-4Y-cus"/>
                     </connections>
@@ -209,6 +214,12 @@
                                     <action selector="submitPressed:" destination="dct-Jx-edY" eventType="touchUpInside" id="AdY-Cb-L44"/>
                                 </connections>
                             </button>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progressViewStyle="bar" translatesAutoresizingMaskIntoConstraints="NO" id="E7V-4N-IKc">
+                                <rect key="frame" x="112" y="102.5" width="150" height="2.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="progressTintColor" red="0.92073958330000005" green="0.072171865840000002" blue="0.1191905861" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </progressView>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -223,6 +234,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="hik-C9-6RT"/>
                     <connections>
+                        <outlet property="pView" destination="E7V-4N-IKc" id="ucG-5K-6cE"/>
                         <outlet property="textField" destination="3yR-hd-rXg" id="RyK-xf-kjV"/>
                         <segue destination="Pv1-b6-iax" kind="show" identifier="SegueListView" id="cVg-wh-ema"/>
                     </connections>
@@ -415,6 +427,12 @@
                                     <action selector="submitPressed:" destination="cIM-87-UY2" eventType="touchUpInside" id="NEc-nD-vYj"/>
                                 </connections>
                             </button>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progressViewStyle="bar" translatesAutoresizingMaskIntoConstraints="NO" id="P96-hX-pLj">
+                                <rect key="frame" x="112" y="98.5" width="150" height="2.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                <color key="progressTintColor" red="0.4594411732" green="0.96722221139999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </progressView>
                         </subviews>
                         <color key="backgroundColor" red="0.82395702599999998" green="0.94121193889999999" blue="0.96673613790000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -429,6 +447,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="45H-1p-p6e"/>
                     <connections>
+                        <outlet property="pView" destination="P96-hX-pLj" id="X8G-C6-CRl"/>
                         <outlet property="textField" destination="m8I-7D-48d" id="lnf-K1-bH9"/>
                         <segue destination="ndv-mp-Ogc" kind="show" identifier="SegueListView" id="DhK-BE-sRu"/>
                     </connections>
@@ -468,6 +487,10 @@
                                     <action selector="submitPressed:" destination="f9M-vi-xpO" eventType="touchUpInside" id="Oli-ya-izo"/>
                                 </connections>
                             </button>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progressViewStyle="bar" progress="0.10000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="Q5R-Ja-oIG">
+                                <rect key="frame" x="112" y="106.5" width="150" height="2.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </progressView>
                         </subviews>
                         <color key="backgroundColor" red="0.47605070160995505" green="0.9555959185788051" blue="0.48843392367192884" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -482,6 +505,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="Wpp-6R-mWO"/>
                     <connections>
+                        <outlet property="pView" destination="Q5R-Ja-oIG" id="IlZ-wV-d7X"/>
                         <outlet property="textField" destination="X1H-4Q-S53" id="kbV-9Q-eNH"/>
                         <segue destination="5Pc-Wq-KWl" kind="show" identifier="SegueListView" id="3GG-WQ-f9U"/>
                     </connections>
